@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.maindiv
+{
+height: 100px;
+width: 100%;
+box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.16);
+transform: translateY(-5px);
+/* background-color: whitesmoke; */
+}
+.img{
+    height: 80px;
+    width: 87px;
+    margin-left: 101px;
+    margin-top: 11px;
+}
+.p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 233px;
+    margin-top: -45px;
+font-weight: bold;
+}
+
+.ul{
+    display: flex;
+    justify-content: right;
+    margin: -35px -34px;
+    padding: 17px 51px;
+    gap: 48px;
+}
+.ul .li{
+    list-style: none;
+}
+.ul .li .a{
+    text-decoration: none;
+    color: rgb(0 0 0 / 63%);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 19px 15px;
+   
+}
+/* *******************Bottom Line hover********************** */
+
+.nav .li .a{
+    position: relative; /* Make the parent of the link relative */
+  }
+  .nav .li .a::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    content: "";
+    background: #fb6107;
+    transition: all 0.35s ease-in-out;
+  }
+  
+  .nav .li .a:hover::after {
+    left: 0;
+    width: 100%;
+  }
+/* ******************************************* */
